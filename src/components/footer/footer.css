@@ -1,0 +1,20 @@
+.sensei_footer {
+    background-color: #EFEFEF;
+    padding: 0;
+}
+
+.sensei_footer_pp {
+    display: flex;
+    padding: 0.2rem 3.12rem;
+}
+
+.sensei_footer_pp p {
+    color: #4D5667;
+    text-decoration: underline;
+}
+
+.sensei_footer_pp button {
+    border: 0;
+    padding-right: 0.69rem;
+    cursor: pointer;
+}
