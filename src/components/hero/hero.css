@@ -3,8 +3,8 @@ h1 {
 }
 
 .sensei_hero_img img{
-    width: 29rem;
-    height: 20rem;
+    width: 28rem;
+    height: 18rem;
 }
 
 .sensei_leftside h1 {
@@ -42,7 +42,7 @@ h1 {
 
 .sensei_rightside h1{
     display: flex;
-    height: 3rem;
+    height: 1.5rem;
     justify-content: center;
     color: #4D5667;
 }
