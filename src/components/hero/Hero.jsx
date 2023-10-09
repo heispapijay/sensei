@@ -70,7 +70,7 @@ function Hero() {
             />
           ))}</div>
           <div className='mobile_buttons'>
-            <a href='https://hztgl43n8jl.typeform.com/to/PLPXt9By'><button className='btn1'>Join Our Test Cohort</button></a>
+            <a href='https://hztgl43n8jl.typeform.com/to/PLPXt9By'><button className='btn1'>Join our Beta Testing</button></a>
             <a href='https://hztgl43n8jl.typeform.com/to/OkuBrIXv'><button className='btn2'>Subscribe to Updates
             </button></a>
           </div>
@@ -85,7 +85,7 @@ function Hero() {
             Catch the latest updates, exclusive offers, and more right in your inbox. Subscribe now to stay in the know about events, product launches, and tailored content. You can join our test cohort to test our product or join our mailing list. Join us!
           </p>
           <div>
-            <a href='https://hztgl43n8jl.typeform.com/to/PLPXt9By'><button className='btn1'>Join Our Test Cohort</button></a>
+            <a href='https://hztgl43n8jl.typeform.com/to/PLPXt9By'><button className='btn1'>Join our Beta Testing</button></a>
             <a href='https://hztgl43n8jl.typeform.com/to/OkuBrIXv'><button className='btn2'>Subscribe to Updates
             </button></a>
           </div>
