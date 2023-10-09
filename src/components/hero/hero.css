@@ -44,6 +44,7 @@ h1 {
 
 .sensei_rightside_center {
     text-align: center;
+    margin: auto;
 }
 
 .sensei_rightside h1 {
@@ -129,11 +130,15 @@ h1 {
 
     .sensei_rightside {
         width: 100%;
+        margin: 20px 0px;
     }
 
     .mobile_buttons {
         display: inline;
         margin: 0 2rem;
+    }
+    .sensei_rightside_center {
+        margin-top: 20px;
     }
 
 }
