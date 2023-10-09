@@ -8,3 +8,10 @@
     height: 4.6875rem;
 }
 
+@media screen and (max-width: 991px) {
+    .sensei_nav{
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 1rem;
+    }
+}
