@@ -2,7 +2,11 @@ h1 {
     font-size: 1.5625rem;
 }
 
-.sensei_hero_img img{
+.mobile_buttons {
+    display: none;
+}
+
+.sensei_hero_img img {
     width: 28rem;
     height: 18rem;
 }
@@ -13,14 +17,14 @@ h1 {
 
 .sensei_leftside p {
     color: #A2A2A4;
-    width: 32.1875rem;
+    width: auto;
 }
 
 .sensei_rightside {
     display: flex;
     flex-direction: column;
     width: 50%;
-    justify-content: space-between;
+
 }
 
 .sensei_leftside {
@@ -28,8 +32,9 @@ h1 {
     flex-direction: column;
     background-color: white;
     width: 50%;
-    height: 100vh;
+    min-height: 100vh;
     border-top-left-radius: 0.625rem;
+    padding: 0 3rem;
 }
 
 .sensei_main {
@@ -40,7 +45,7 @@ h1 {
     text-align: center;
 }
 
-.sensei_rightside h1{
+.sensei_rightside h1 {
     display: flex;
     height: 1.5rem;
     justify-content: center;
@@ -59,16 +64,17 @@ h1 {
 
 .btn1,
 .btn2 {
-    margin: 1rem;
     border-radius: 0.375rem;
     border: 1px solid #FFCD00;
     padding: 1rem 2.5rem;
     font-size: 1.125rem;
+    width: 255px;
 }
 
-.btn1 {   
+.btn1 {
     background: none;
-    color: #FFCD00; 
+    color: #FFCD00;
+    margin-right: 1rem;
 }
 
 .btn2 {
@@ -79,6 +85,7 @@ h1 {
 .indicators {
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 100px;
 }
 
 .indicators span {
@@ -86,12 +93,120 @@ h1 {
     width: 3.0625rem;
     height: 0.375rem;
     border-radius: 0.3125rem;
-    background-color: #efefef; 
-    margin: 0 5px; 
+    background-color: #efefef;
+    margin: 0 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; 
-  }
+    transition: background-color 0.3s ease;
+}
 
 .indicators span.active {
     background-color: #FFCD00;
-  }
+}
+
+/* add media query for screen size 1148 below */
+@media screen and (max-width: 1148px) {
+
+    .btn1,
+    .btn2 {
+        border-radius: 0.375rem;
+        border: 1px solid #FFCD00;
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+        width: 220px;
+    }
+
+    .btn1 {
+        margin-right: 0.5rem;
+    }
+}
+
+/* add media query for screen size 991 below */
+@media screen and (max-width: 991px) {
+    .sensei_leftside {
+        display: none;
+    }
+
+    .sensei_rightside {
+        width: 100%;
+    }
+
+    .mobile_buttons {
+        display: inline;
+        margin: 0 2rem;
+    }
+
+}
+
+/* add media query for screen size 512 below */
+
+@media screen and (max-width: 512px) {
+    .mobile_buttons {
+        display: flex;
+        flex-direction: column
+    }
+    .sensei_hero_img img {
+        width: 20rem;
+        height: 13rem;
+    }
+
+    .sensei_rightside h1 {
+        font-size: 1.5rem;
+    }
+
+    .sensei_rightside p {
+        font-size: 0.875rem;
+    }
+
+    .btn1,
+    .btn2 {
+        border-radius: 0.375rem;
+        border: 1px solid #FFCD00;
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+
+    .btn1 {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .indicators {
+        margin-bottom: 50px;
+    }
+}
+
+/* add media query for screen size 330 below */
+@media screen and (max-width: 330px) {
+    .sensei_main {
+        margin: auto;
+    }
+    .sensei_hero_img img {
+        width: 18rem;
+        height: 11rem;
+    }
+
+    .sensei_rightside h1 {
+        font-size: 1.2rem;
+    }
+
+    .sensei_rightside p {
+        font-size: 0.8rem;
+    }
+
+    .btn1,
+    .btn2 {
+        border-radius: 0.375rem;
+        border: 1px solid #FFCD00;
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+    }
+
+    .btn1 {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .indicators {
+        margin-bottom: 50px;
+    }
+}

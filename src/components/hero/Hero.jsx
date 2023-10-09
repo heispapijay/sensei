@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './hero.css';
-import { Navbar, Footer } from '../../components';
+import { Navbar } from '../../components';
 
 // import heroIMG from '../../assets/sensei_hero.svg'
 import hero1 from '../../assets/hero1.svg';
@@ -9,7 +9,7 @@ import hero3 from '../../assets/hero3.svg';
 
 
 function Hero() {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
     hero1,
@@ -49,45 +49,51 @@ function Hero() {
 
     return () => clearInterval(timer);
   }, []);
-    return (
-        <div className='sensei_main'>
-            <div className='sensei_rightside'>
-            <Navbar />
-                <div className='sensei_rightside_center'>
-                    <div className='sensei_hero_img'>
-                        <img src={images[currentIndex]} alt='animation' />
-                    </div>
-                    <div className='sensei_text center'>
-                        <h1>{headings[currentIndex]}</h1>
-                        <p>{paragraphs[currentIndex]}
-                        <br/>{paragraphs2[currentIndex]}</p>
-                    </div>
-                    <div className='indicators'>{images.map((_, index) => (
-          <span
-            key={index}
-            className={index === currentIndex ? 'active' : ''}
-            onClick={() => setCurrentIndex(index)}
-          />
-        ))}</div>
-                </div>
-                <Footer />
-            </div>
-
-            <div className='sensei_leftside'>
-                <div className='sensei_leftside_start'>
-                    <h1>Join Us Today!</h1>
-                    <p>
-                    Catch the latest updates, exclusive offers, and more right in your inbox. Subscribe now to stay in the know about events, product launches, and tailored content. You can join our test cohort to test our product or join our mailing list. Join us!
-                    </p>
-                    <div>
-                    <a href='https://hztgl43n8jl.typeform.com/to/PLPXt9By'><button className='btn1'>Join Our Test Cohort</button></a>
-                        <a href='https://hztgl43n8jl.typeform.com/to/OkuBrIXv'><button className='btn2'>Join Our Mailing List</button></a>
-                    </div>
-                </div>
-                
-            </div>
+  return (
+    <div className='sensei_main'>
+      <div className='sensei_rightside'>
+        <Navbar />
+        <div className='sensei_rightside_center'>
+          <div className='sensei_hero_img'>
+            <img src={images[currentIndex]} alt='animation' />
+          </div>
+          <div className='sensei_text center'>
+            <h1>{headings[currentIndex]}</h1>
+            <p>{paragraphs[currentIndex]}
+              <br />{paragraphs2[currentIndex]}</p>
+          </div>
+          <div className='indicators'>{images.map((_, index) => (
+            <span
+              key={index}
+              className={index === currentIndex ? 'active' : ''}
+              onClick={() => setCurrentIndex(index)}
+            />
+          ))}</div>
+          <div className='mobile_buttons'>
+            <a href='https://hztgl43n8jl.typeform.com/to/PLPXt9By'><button className='btn1'>Join Our Test Cohort</button></a>
+            <a href='https://hztgl43n8jl.typeform.com/to/OkuBrIXv'><button className='btn2'>Subscribe to Updates
+            </button></a>
+          </div>
         </div>
-    )
+        {/* <Footer /> */}
+      </div>
+
+      <div className='sensei_leftside'>
+        <div className='sensei_leftside_start'>
+          <h1>Connect with Us</h1>
+          <p>
+            Catch the latest updates, exclusive offers, and more right in your inbox. Subscribe now to stay in the know about events, product launches, and tailored content. You can join our test cohort to test our product or join our mailing list. Join us!
+          </p>
+          <div>
+            <a href='https://hztgl43n8jl.typeform.com/to/PLPXt9By'><button className='btn1'>Join Our Test Cohort</button></a>
+            <a href='https://hztgl43n8jl.typeform.com/to/OkuBrIXv'><button className='btn2'>Subscribe to Updates
+            </button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  )
 }
 
 export default Hero
