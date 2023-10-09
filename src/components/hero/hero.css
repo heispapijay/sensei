@@ -16,8 +16,9 @@ h1 {
 }
 
 .sensei_leftside p {
-    color: #A2A2A4;
+    color: #838383;
     width: auto;
+    margin-top: 0;
 }
 
 .sensei_rightside {
