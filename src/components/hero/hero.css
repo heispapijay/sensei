@@ -126,6 +126,10 @@ h1 {
     .sensei_leftside p {
         width: 29rem;
     }
+
+    .footer{
+        display: block;
+    }
 }
 
 /* add media query for screen size 991 below */
@@ -146,6 +150,8 @@ h1 {
     .sensei_rightside_center {
         margin-top: 20px;
     }
+
+
 
 }
 

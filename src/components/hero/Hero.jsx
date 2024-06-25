@@ -75,7 +75,7 @@ function Hero() {
             </button></a>
           </div>
         </div>
-        {/* <Footer /> */}
+        <div className='footer'><Footer /></div>
       </div>
 
       <div className='sensei_leftside'>
@@ -89,8 +89,9 @@ function Hero() {
             <a href='https://hztgl43n8jl.typeform.com/to/OkuBrIXv'><button className='btn2'>Subscribe to Updates
             </button></a>
           </div>
+          
         </div>
-        <div><Footer /></div>
+        
       </div>
     </div>
   )

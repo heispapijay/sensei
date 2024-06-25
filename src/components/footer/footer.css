@@ -35,3 +35,13 @@
 .footer-new a:hover{
     text-decoration: underline;
 }
+
+@media screen and (max-width: 992px) {
+    .footer-new{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    
+}
