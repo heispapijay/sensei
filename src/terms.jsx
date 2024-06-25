@@ -82,7 +82,7 @@ const Terms = () => (
             <p>If you have any questions about these Terms, please contact us at:</p>
             <ul>
                 <li>Email: admin@asksensei.ai</li>
-                <li>Address: 1603 Tribeca Way, Dallas Texas 75204</li>
+                <li>Address: 701 wild prairie Dr Arlington texas 76002</li>
             </ul>
             <p>Thank you for choosing Sensei AI. We are committed to helping you achieve your professional goals.</p>
         </div>

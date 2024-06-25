@@ -80,7 +80,7 @@ const PrivacyPolicy = () => (
     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
     <ul>
       <li>Email: admin@asksensei.ai</li>
-      <li>Address: 1603 Tribeca Way, Dallas Texas 75204</li>
+      <li>Address: 701 wild prairie Dr Arlington texas 76002</li>
     </ul>
     <p>Thank you for trusting Sensei AI with your professional development needs. We are committed to protecting your privacy and providing a secure and efficient platform.</p>
   </div>
