@@ -1,11 +1,18 @@
 import './App.css';
-import { Hero } from './components';
+import { Footer, Hero } from './components';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Terms from './terms';
+import PrivacyPolicy from './privacy';
 
 function App() {
   return (
-    <div className="App">
-    <Hero />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Hero />} />
+        <Route path='/privacy' element={<PrivacyPolicy />} />
+        <Route path='/terms' element={<Terms/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

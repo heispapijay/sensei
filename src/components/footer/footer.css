@@ -1,7 +1,7 @@
-.sensei_footer {
+/* .sensei_footer {
     background-color: #EFEFEF;
     padding: 0;
-}
+} */
 
 .sensei_footer_pp {
     display: flex;
@@ -17,4 +17,21 @@
     border: 0;
     padding-right: 0.69rem;
     cursor: pointer;
+}
+
+.footer-new{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 3.12rem;
+}
+
+.footer-new a{
+    /* color: #0043bf; */
+    color: #FFCD00;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.footer-new a:hover{
+    text-decoration: underline;
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './hero.css';
-import { Navbar } from '../../components';
+import { Footer, Navbar } from '../../components';
 
 // import heroIMG from '../../assets/sensei_hero.svg'
 import hero1 from '../../assets/hero1.svg';
@@ -90,7 +90,7 @@ function Hero() {
             </button></a>
           </div>
         </div>
-
+        <div><Footer /></div>
       </div>
     </div>
   )
